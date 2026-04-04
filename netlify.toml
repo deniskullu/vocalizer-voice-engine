@@ -1,10 +1,5 @@
 [[headers]]
-  # Define which paths this applies to (e.g., all files)
   for = "/*"
   [headers.values]
-    # Allow requests from your main app domain
-    Access-Control-Allow-Origin = "https://vocaliser.netlify.app"
-    # Allow common methods
-    Access-Control-Allow-Methods = "GET, OPTIONS"
-    # Allow common headers
-    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+    Access-Control-Allow-Origin = "*"
+    Cross-Origin-Resource-Policy = "cross-origin"
